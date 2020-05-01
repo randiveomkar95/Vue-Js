@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<body>
+    <center><h2>Welcome to Vue Js</h2></center>
+    <div id="app">
+        <center>
+        <p><input v-model="message"></p>
+        <p>{{ message }}</p>
+        </center>
+    </div>
+    <!--
+    new Vue : Object
+    el      : Binding the object data to the html
+    -->
+    <script>
+    myObject = new Vue({
+      el: '#app',
+      data: {message: 'Enter Some Text...'}
+    })
+    </script>
+</body>
+</html>
